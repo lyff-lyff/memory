@@ -620,7 +620,11 @@
                                 </div>
                                 <div class="col-md-12">
                                   <fieldset>
-                                    <button type="submit" id="form-submit" class="btn">发送留言</button>
+                                   <button type="button" id="form-submit" class="btn" onclick="saveStorage('message')">发送留言</button>
+					<button type="button" id="form-submit" class="btn" onclick="clearStorage('msg')">清除</button>
+					<button type="button" id="form-submit" class="btn" onclick="loadStorage('msg')">读取</button>
+					<hr>
+					<p id="msg"></p>
                                   </fieldset>
                                 </div>
                             </div>
@@ -686,6 +690,7 @@
     </script>
 
     <script src="js/jquery.min10.js" type="text/javascript"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 </html>
