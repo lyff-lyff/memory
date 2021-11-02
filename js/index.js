@@ -20,8 +20,8 @@ function loadStorage(id){
 	var target=document.getElementById(id);
 	target.innerHTML=reselt;
 }
-//function clearStorage(id){
-//	localStorage.clear();
-//	alert("数据已经被成功删除");
-//	loadStorage("msg");
-//}
+function clearStorage(id){
+	localStorage.clear();
+	alert("数据已经被成功删除");
+	loadStorage("msg");
+}
