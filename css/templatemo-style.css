@@ -458,6 +458,12 @@ header {
 
 
 /* Featured Style */
+#featured1 {
+  padding-left: 10px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eee;
+}
 
 #featured {
   padding-left: 60px;
@@ -1029,6 +1035,10 @@ header {
 
   .section-heading p {
     position: relative;
+  }
+  #featured1 {
+    padding-left: 1px;
+    padding-right: 15px;
   }
 
   #featured {
