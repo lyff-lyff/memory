@@ -16,9 +16,9 @@ let play_pause=document.querySelector('.play-pause'),
     play_next=document.querySelector('.play-next');
 
 // 专辑名数组
-let albums=['Sakura Tears','洪荒之力','忘川彼岸','Way Back Home','起风了'];
+let albums=['Sakura Tears','洪荒之力','忘川彼岸','Way Back Home','起风了','知足'];
 // 歌曲信息数组
-let track_names=['櫻花淚-Sakura Tears','Ngẫu Hứng-Hoaprox','古风dj - 忘川彼岸','','买辣椒也用券 - 起风了'];
+let track_names=['櫻花淚-Sakura Tears','Ngẫu Hứng-Hoaprox','古风dj - 忘川彼岸','','买辣椒也用券 - 起风了','五月天 - 知足'];
 
 // 定义变量
 let progress_t, //鼠标在进度条上悬停的位置
@@ -185,11 +185,11 @@ function updateCurTime(){
 function selectTrack(flag){
     if(flag==0 || flag==1){
         ++cur_index;
-        if(cur_index==5)
+        if(cur_index==6)
         {cur_index=0;}
     }else{
         if(cur_index==0)
-        {cur_index=5;}
+        {cur_index=6;}
         --cur_index;
     }
 
