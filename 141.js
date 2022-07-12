@@ -185,11 +185,11 @@ function updateCurTime(){
 function selectTrack(flag){
     if(flag==0 || flag==1){
         ++cur_index;
-        if(cur_index==7)
+        if(cur_index==albums.length)
         {cur_index=0;}
     }else{
         if(cur_index==0)
-        {cur_index=7;}
+        {cur_index=albums.length;}
         --cur_index;
     }
 
