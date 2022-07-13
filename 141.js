@@ -60,6 +60,9 @@ function initPlayer(){
     play_next.addEventListener('click',function(){
         selectTrack(1);
     });
+    audio.onended=function(){
+        selectTrack(1);
+    };
 }
 
 // 播放暂停
